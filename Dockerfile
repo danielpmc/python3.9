@@ -18,9 +18,7 @@ ENV LANG en_US.UTF-8
 ENV LC_ALL en_US.UTF-8
 
     # NodeJS
-RUN curl -sL https://deb.nodesource.com/setup_14.x | bash - \
-    && apt -y install nodejs \
-    && apt -y install ffmpeg \
+RUN apt -y install ffmpeg \
     && apt -y install make \
     && apt -y install build-essential \
     && apt -y install wget \ 
